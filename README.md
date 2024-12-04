@@ -1,4 +1,4 @@
-# web development assignment. Registration part
+# web development assignment. Login part( this is a copy of a site to have courses to prepare for a Canadian language exam)
 
 ## Table of contents
 
@@ -8,7 +8,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -23,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](inscription.png)
+![](images/rendu.png)
 
 
 
@@ -42,25 +41,46 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="deroulement">
+    <a href="#" class="visible-a visible-toggle">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <span>expression écrite</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+    <div class="affiche toggle ecrite">
+        <a href="#">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>les sujets d'actualités</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Methodologie</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-check"></i>
+            <span>Correction des sujets 
+                  d'expression ecrite</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Plateforme de redaction</span>
+        </a>
+    </div>
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.deroulement::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px; /* Étendre verticalement sans modifier le design */
+}
+.deroulement:hover .toggle{
+    display: block;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-
 
 ## Author
 
