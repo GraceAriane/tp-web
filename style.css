@@ -56,7 +56,12 @@ nav a i{
     font-size: 15px;
 }
 /****head second*******************************************/
-
+.container-header-second{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
 .header-second{
     display: flex;
     width: 90%;
@@ -64,21 +69,31 @@ nav a i{
     align-items: center;
     gap: 25px;
     max-width: 90%;
-    position: sticky;
-    top: 0;
     background-color: white;
-    z-index: 3;
+    height: 94px;
 }
+
 .header-second img{
     width: 122px;
     margin-left: -10px;
+    transition: 0.2s ease;
+}
+.scrolled{
+    height: 80px;
+    box-shadow: 8px 8px 18px -15px #00000091;
+    transition: 0.2s ease;
+}
+.scrolled img{
+    width: 80px;
+}
+.scrolled-height{
+    height: 80px;
 }
 .navigation{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .navigation .visible-a{
     text-transform: uppercase;
     font-size: 11px;
@@ -87,7 +102,7 @@ nav a i{
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: 0.3s ease-in;
+    transition: 0.1s ease;
 }
 .navigation .visible-a:hover{
     color: rgb(19, 94, 242);
@@ -144,7 +159,7 @@ nav a i{
     width: 310px;
 }
 /*----------------------main--------------------*/
-main{
+.main-page-connexion{
     padding-top: 30px;
     width: 80%;
     max-width: 80%;
@@ -208,7 +223,7 @@ main{
 .card-second a:hover{
     background-color: rgb(41, 41, 41);
 }
-h2{
+.main-page-connexion h2{
     text-align: center;
     color: rgb(26, 37, 56);
     font-size: 35px;
@@ -237,7 +252,7 @@ h2{
 }
 /***********************footer**************************/
 footer{
-    margin-top: 51px;
+    margin-top: 55px;
     padding: auto;
     color: white;
 }
@@ -308,7 +323,7 @@ footer{
     font-size: 15px;
     line-height: 25px;
 }
-h3{
+footer h3{
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
